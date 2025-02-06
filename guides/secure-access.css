@@ -1,0 +1,193 @@
+/* styles.css */
+
+:root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #f0f0f0; /* Light text */
+    --accent-color: #4CAF50; /* Green accent */
+    --card-bg: #1e1e1e; /* Card background */
+    --font-family: "Courier New", monospace; /* Monospace font */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: #0b0b0b; /* Slightly lighter header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--card-bg);
+    padding: 10px;
+    overflow-x: auto; /* Handle potential overflow horizontally */
+    white-space: nowrap; /* Prevent wrapping of nav items */
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center on larger screens */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+nav li {
+    margin: 5px 10px; /* Adjust spacing for smaller screens */
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 2px solid var(--accent-color); /* Green border */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color); /* Text color changes to background color on hover */
+}
+
+main {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+.section-container {
+    width: 95%; /* Occupy most of the main area */
+    max-width: 900px; /* Set a maximum width */
+    margin: 15px auto; /* Center the section */
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width */
+    border: 1px solid #333; /* Subtle border */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+section h2 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--accent-color); /* Style for subheadings */
+    margin-top: 1em; /* Add some spacing above subheadings */
+}
+
+ul {
+    list-style-type: disc; /* Keep bullet points for lists */
+    padding-left: 20px; /* Indent list items */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #66ff66; /* Change color on hover */
+}
+
+footer {
+    background-color: #0b0b0b; /* Slightly lighter footer */
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid var(--accent-color);
+    margin-top: auto; /* Push footer to bottom */
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Tablet and smaller */
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items horizontally */
+        flex-wrap: nowrap; /* Prevent wrapping in vertical mode */
+    }
+
+    nav li {
+        margin: 5px 0; /* Adjust spacing for vertical nav */
+    }
+
+    .section-container {
+        width: 90%; /* Make sections take up more width on smaller screens */
+    }
+}
+
+@media (min-width: 769px) { /* Larger than tablet */
+    nav ul {
+        flex-direction: row; /* Horizontal navigation */
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) { /* Desktop */
+    .section-container {
+        width: 70%; /* Adjust section width for desktops */
+    }
+}
+
+
+/* Other adjustments */
+.onion-link {
+    font-size: 0.8em; /* Smaller font for onion links */
+    color: #999; /* Lighter color */
+    display: block; /* Make it a block element so it appears below the link */
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #ccc;
+    display: block;
+    margin-top: 3px;
+}
+
+.warning {
+    color: #ffcc00; /* Yellow warning color */
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Style for lists in the getting started guide */
+#getting-started ul {
+    list-style-type: disc; /* Keep bullet points */
+    padding-left: 20px;
+}
+
+#getting-started li {
+    margin-bottom: 10px;
+}
