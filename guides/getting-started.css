@@ -1,0 +1,138 @@
+/* styles.css */
+
+:root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #f0f0f0; /* Light text */
+    --accent-color: #4CAF50; /* Green accent */
+    --card-bg: #1e1e1e; /* Card background */
+    --font-family: "Courier New", monospace; /* Monospace font */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: #0b0b0b; /* Slightly lighter header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--card-bg);
+    padding: 10px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    white-space: nowrap; /* Prevent nav items from wrapping */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 2px solid var(--accent-color); /* Green border */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color); /* Text color changes to background color on hover */
+}
+
+main {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+.section-container {
+    width: 95%; /* Occupy most of the main area */
+    max-width: 900px; /* Set a maximum width */
+    margin: 15px auto; /* Center the section */
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in width */
+    border: 1px solid #333; /* Subtle border */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+section h2 {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc; /* Keep bullet points for lists in getting started */
+    padding-left: 20px; /* Indent list items */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+footer {
+    background-color: #0b0b0b; /* Slightly lighter footer */
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid var(--accent-color);
+    margin-top: auto; /* Push footer to bottom */
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) { /* Tablet and larger */
+    nav ul {
+        justify-content: center; /* Center navigation on larger screens */
+    }
+
+    .section-container {
+        width: 80%; /* Adjust section width */
+    }
+}
+
+@media (min-width: 1200px) { /* Desktop */
+    .section-container {
+        width: 60%; /* Further adjust section width */
+    }
+}
