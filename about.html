@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dark Web Resources Hub</title>
+    <style>
+        /* styles.css */
+
+        :root {
+            --bg-color: #111;
+            --text-color: #eee;
+            --accent-color: #0f0;
+            --card-bg: #222;
+            --font-family: "Roboto Mono", monospace;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: var(--card-bg);
+            padding: 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        nav li {
+            margin: 0 15px;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: 2px solid var(--accent-color);
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            color: #111;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .section-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            box-sizing: border-box;
+            border: 1px solid #444;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .section-container:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid var(--accent-color);
+            margin-top: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            main {
+                align-items: center;
+            }
+
+            .section-container {
+                width: 80%;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            nav li {
+                margin: 0 20px;
+            }
+
+            nav a {
+                padding: 10px 20px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .section-container {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Dark Web Resources Hub</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-container">
+            <h2>About This Repository</h2>
+            <p>The Dark Web Resources Hub is a curated collection of educational and legal resources related to the dark web.  It aims to provide a central location for researchers, educators, and anyone interested in learning more about this often misunderstood part of the internet.</p>
+
+            <p>This repository is maintained by USER69BLOOD and is a community-driven project. We believe in open access to information and responsible exploration of the dark web.</p>
+
+            <h2>What You'll Find Here</h2>
+            <ul>
+                <li>Categorized links to dark web search engines, libraries, forums, marketplaces, tools, and more.</li>
+                <li>Guides on how to access the dark web safely and anonymously.</li>
+                <li>Information about online privacy and security best practices.</li>
+                <li>Resources for researchers and educators.</li>
+            </ul>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide a reliable and trustworthy resource for navigating the dark web. We emphasize responsible and ethical use of the information and tools provided.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dark Web Resources Hub</p>
+    </footer>
+
+</body>
+
+</html>
