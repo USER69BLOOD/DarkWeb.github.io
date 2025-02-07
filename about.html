@@ -157,6 +157,56 @@
                 width: 70%;
             }
         }
+
+
+        .support-me {
+            text-align: center;
+            margin: 20px auto;
+            /* Center horizontally */
+            padding: 20px;
+            background-color: #1e1e1e;
+            /* Match .container background */
+            border-radius: 8px;
+            /* Match .container border radius */
+        }
+
+        .support-me p {
+            color: #e0e0e0;
+            font-family: var(--font-family);
+            margin-bottom: 10px;
+        }
+
+        .support-me a {
+            display: inline-block;
+            /* Make the link behave like a block element */
+        }
+
+        .support-me img {
+            width: 200px;
+            /* Set the image width */
+            transition: transform 0.2s ease;
+            /* Smooth hover effect */
+        }
+
+        .support-me img:hover {
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            /* Add a subtle shadow on hover */
+        }
+
+        /* Responsive design (optional) */
+        @media (max-width: 768px) {
+            .support-me {
+                padding: 10px;
+                /* Reduce padding on smaller screens */
+            }
+
+            .support-me img {
+                width: 150px;
+                /* Smaller image on smaller screens */
+            }
+        }
     </style>
 </head>
 
@@ -167,18 +217,23 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contribute.html">Contribute</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contribute.html">Contribute</a></li>
+            <li><a href="./secure-access.html">Secure Access</a></li>
+            <li><a href="./privacy-tips.html">Privacy Tips</a></li>
         </ul>
     </nav>
 
     <main>
         <section class="section-container">
             <h2>About This Repository</h2>
-            <p>The Dark Web Resources Hub is a curated collection of educational and legal resources related to the dark web.  It aims to provide a central location for researchers, educators, and anyone interested in learning more about this often misunderstood part of the internet.</p>
+            <p>The Dark Web Resources Hub is a curated collection of educational and legal resources related to the dark
+                web. It aims to provide a central location for researchers, educators, and anyone interested in learning
+                more about this often misunderstood part of the internet.</p>
 
-            <p>This repository is maintained by USER69BLOOD and is a community-driven project. We believe in open access to information and responsible exploration of the dark web.</p>
+            <p>This repository is maintained by USER69BLOOD and is a community-driven project. We believe in open access
+                to information and responsible exploration of the dark web.</p>
 
             <h2>What You'll Find Here</h2>
             <ul>
@@ -189,7 +244,19 @@
             </ul>
 
             <h2>Our Mission</h2>
-            <p>Our mission is to provide a reliable and trustworthy resource for navigating the dark web. We emphasize responsible and ethical use of the information and tools provided.</p>
+            <p>Our mission is to provide a reliable and trustworthy resource for navigating the dark web. We emphasize
+                responsible and ethical use of the information and tools provided.</p>
+        </section>
+
+        <section>
+            <div class="support-me">
+                <p>If you appreciate my work on this project, you can consider buying me a coffee to help support its
+                    continued development:</p>
+                <a href="https://www.buymeacoffee.com/USER69BLOOD" target="_blank">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee"
+                        width="200">
+                </a>
+            </div>
         </section>
     </main>
 
