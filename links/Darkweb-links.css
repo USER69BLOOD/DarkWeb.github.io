@@ -231,7 +231,7 @@ footer p {
 
 .support-link p {
   color: #eee; /* Match your body text color */
-  font-family: 'Roboto', sans-serif; /* Match your font family */
+  font-family: var(--font-family);
   margin-bottom: 10px;
 }
 
