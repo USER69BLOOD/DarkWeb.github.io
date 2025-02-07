@@ -211,8 +211,51 @@ footer p {
   }
 }
 
-@media (min-width: 1200px) { /* Desktop */
+@media (min-width: 1200px) { 
   .section-container {
       width: 80%;
+  }
+}
+
+
+
+/* Buy me a coffe */
+
+.support-link {
+  text-align: center;
+  margin: 20px 0; /* Adjust margin as needed */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #282828; /* Match your card background color */
+  border-radius: 8px; /* Match your card border radius */
+}
+
+.support-link p {
+  color: #eee; /* Match your body text color */
+  font-family: 'Roboto', sans-serif; /* Match your font family */
+  margin-bottom: 10px;
+}
+
+.support-link a {
+  display: inline-block; /* Helps with alignment if needed */
+}
+
+.support-link img {
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.support-link img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design (optional) */
+@media (max-width: 768px) {
+  .support-link {
+    padding: 15px;
+  }
+
+  .support-link img {
+    width: 150px;
   }
 }
