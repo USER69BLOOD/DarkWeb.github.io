@@ -43,5 +43,12 @@ Contributions are welcome! If you find a broken link or know of a valuable resou
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support My Work
+
+If you find this project helpful or appreciate the effort put into it, consider buying me a coffee!
+
+<a href="https://www.buymeacoffee.com/USER69BLOOD" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200"></a>
+
 <!-- in Future -->
 <!-- [![GitHub Forks](https://img.shields.io/github/forks/USER69BLOOD/darkweb.github.io/network/members)](#) -->
