@@ -12,24 +12,6 @@
   text-align: center;
 }
 
-body {
-  font-family: var(--font-family);
-  margin: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-header {
-  background-color: #0b0b0b;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid var(--accent-color);
-}
-
 
 .onion-link {
   font-size: 0.8rem;

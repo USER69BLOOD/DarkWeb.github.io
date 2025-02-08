@@ -8,10 +8,6 @@
     --font-family: "Courier New", monospace;
   }
   
-  .sidebar h2 {
-    text-align: center;
-  }
-  
   body {
     font-family: var(--font-family);
     margin: 0;
