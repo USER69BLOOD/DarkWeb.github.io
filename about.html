@@ -5,206 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dark Web Resources Hub</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* styles.css */
-
         :root {
-            --bg-color: #111;
-            --text-color: #eee;
-            --accent-color: #0f0;
-            --card-bg: #222;
-            --font-family: "Roboto Mono", monospace;
-        }
-
-        body {
-            font-family: var(--font-family);
-            margin: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #000;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        h1 {
-            color: var(--accent-color);
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        nav {
-            background-color: var(--card-bg);
-            padding: 10px;
-            overflow-x: auto;
-            white-space: nowrap;
-            box-sizing: border-box;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            box-sizing: border-box;
-        }
-
-        nav li {
-            margin: 0 15px;
-            box-sizing: border-box;
-        }
-
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 5px;
-            border: 2px solid var(--accent-color);
-            transition: background-color 0.3s, color 0.3s;
-            display: inline-block;
-            box-sizing: border-box;
-        }
-
-        nav a:hover {
-            background-color: var(--accent-color);
-            color: #111;
-        }
-
-        main {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-sizing: border-box;
-        }
-
-        .section-container {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 25px;
-            box-sizing: border-box;
-            border: 1px solid #444;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s;
-        }
-
-        .section-container:hover {
-            transform: translateY(-5px);
-        }
-
-        section h2 {
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-
-        footer {
-            background-color: #000;
-            padding: 15px;
-            text-align: center;
-            border-top: 2px solid var(--accent-color);
-            margin-top: auto;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        footer p {
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        /* Media Queries */
-        @media (min-width: 768px) {
-            main {
-                align-items: center;
-            }
-
-            .section-container {
-                width: 80%;
-            }
-
-            nav ul {
-                justify-content: center;
-            }
-
-            nav li {
-                margin: 0 20px;
-            }
-
-            nav a {
-                padding: 10px 20px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .section-container {
-                width: 70%;
-            }
+            --bg-color: #121212;
+            --text-color: #f0f0f0;
+            --accent-color: #4CAF50;
+            --card-bg: #1e1e1e;
+            --font-family: "Courier New", monospace;
         }
 
 
         .support-me {
             text-align: center;
-            margin: 20px auto;
-            /* Center horizontally */
+            margin: 20px 0;
             padding: 20px;
-            background-color: #1e1e1e;
-            /* Match .container background */
+            background-color: #282828;
             border-radius: 8px;
-            /* Match .container border radius */
         }
 
         .support-me p {
-            color: #e0e0e0;
+            color: #eee;
             font-family: var(--font-family);
             margin-bottom: 10px;
         }
 
         .support-me a {
             display: inline-block;
-            /* Make the link behave like a block element */
         }
 
         .support-me img {
             width: 200px;
-            /* Set the image width */
             transition: transform 0.2s ease;
-            /* Smooth hover effect */
         }
 
         .support-me img:hover {
             transform: scale(1.05);
-            /* Slightly enlarge on hover */
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-            /* Add a subtle shadow on hover */
         }
 
-        /* Responsive design (optional) */
         @media (max-width: 768px) {
             .support-me {
-                padding: 10px;
-                /* Reduce padding on smaller screens */
+                padding: 15px;
             }
 
             .support-me img {
                 width: 150px;
-                /* Smaller image on smaller screens */
             }
         }
     </style>
@@ -217,11 +63,12 @@
 
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/contribute.html">Contribute</a></li>
-            <li><a href="/guides/secure-access.html">Secure Access</a></li>
-            <li><a href="./privacy-tips.html">Privacy Tips</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="./links/Darkweb-links.html">Darkweb Links</a></li>
+            <li><a href="./guides/getting-started.html">Getting Started</a></li>
+            <li><a href="./guides/secure-access.html">Secure Access</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
         </ul>
     </nav>
 
@@ -237,7 +84,7 @@
 
             <h2>What You'll Find Here</h2>
             <ul>
-                <li>Categorized links to dark web search engines, libraries, forums, marketplaces, tools, and more.</li>
+                <li>Categorized mes to dark web search engines, libraries, forums, marketplaces, tools, and more.</li>
                 <li>Guides on how to access the dark web safely and anonymously.</li>
                 <li>Information about online privacy and security best practices.</li>
                 <li>Resources for researchers and educators.</li>
@@ -248,17 +95,15 @@
                 responsible and ethical use of the information and tools provided.</p>
         </section>
 
-        <section>
-            <div class="support-me">
-                <p>If you appreciate my work on this project, you can consider buying me a coffee to help support its
-                    continued development:</p>
-                <a href="https://www.buymeacoffee.com/USER69BLOOD" target="_blank">
-                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee"
-                        width="200">
-                </a>
-            </div>
-        </section>
     </main>
+
+    <div class="support-me">
+        <p>If you appreciate my work on this project, you can consider buying me a coffee to help support its
+            continued development:</p>
+        <a href="https://www.buymeacoffee.com/USER69BLOOD" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200">
+        </a>
+    </div>
 
     <footer>
         <p>&copy; 2025 Dark Web Resources Hub</p>
